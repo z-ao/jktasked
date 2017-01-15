@@ -1,0 +1,13 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.newstable{
+	display: block;
+	height: 400px;
+	width: 100%;
+	overflow: scroll;
+}

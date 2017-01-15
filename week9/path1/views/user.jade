@@ -1,0 +1,157 @@
+doctype html
+html
+    head
+        meta(name='viewport', content='width=device-width,initial-scale=1')
+        meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+        title 
+            admin 
+        link(rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css")
+
+    body
+        nav(class="navbar navbar-default navbar-static-top" role="navigation")
+            div(class="container-fluid")
+                div(class="navbar-header")
+                    button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")                         
+                        span(class="sr-only" Toggle navigation)
+                        span(class="icon-bar")
+                        span(class="icon-bar")
+                        span(class="icon-bar")
+                    a(class="navbar-brand" href="#")
+                        百度新闻后台
+                div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+                    ul(class="nav navbar-nav")
+                        li(class="active")
+                            a(href="#")
+                                首页
+        div(class="container-fluid")
+            div(class="row")
+                div(class="col-md-6 col-ms-12")
+                    div(class="panel panel-default")
+                        div(class="panel-heading")
+                            h3(class="panel-title")
+                                新闻编辑
+                        div(class="panel-body")
+                            form(role="form" method="get" action="addnew")
+                                div(class="form-group")
+                                    label(for="newtitle")
+                                        新闻标题
+                                    input(type="text" class="form-control" id="newstitle" name="newtitle" placeholder="请输入新闻标题")
+                                div(class="form-group")
+                                    label(for="newoption")
+                                        新闻类型
+                                    select(class="form-control" id="newstype" name="newoption")
+                                        option
+                                            精选
+                                        option
+                                            百家
+                                        option
+                                            本地
+                                        option
+                                            图片
+                                        option
+                                            娱乐
+                                        option
+                                            社会
+                                        option
+                                            军事
+                                        option
+                                            女人
+                                        option
+                                            搞笑
+                                        option
+                                            互联网
+                                div(class="form-group")
+                                    label(for="newimg")
+                                        新闻图片
+                                    input(type="text" class="form-control" id="newimg" name="newimg" placeholder="请输入图片路径")
+                                div(class="form-group")
+                                    label(for="newcontent")
+                                        新闻
+                                    input(type="text" class="form-control" id="newcontent" name="newcontent")
+                                div(class="form-group")
+                                    label(for="newtime")
+                                        新闻时间
+                                    input(type="date" class="form-control" id="newtime" name="newtime")
+                                button(class="btn btn-primary" id="submit" type="submit")
+                                    提交新闻
+                div(class="col-md-6 col-ms-12")
+                    div(class="panel panel-default")
+                        div(class="panel-heading")
+                            h3(class="panel-title")
+                                新闻列表
+                        div(class="panel-body newstable")
+                            table(class="table" id="newstable")
+                                thead
+                                    th
+                                        编号
+                                    th
+                                        类型
+                                    th
+                                        新闻标题
+                                    th
+                                        图片地址
+                                    th
+                                        新闻
+                                    th
+                                        新闻时间
+                                tbody
+                        div(class="modal-body")
+                            form(role="form" method="get" action="deletenew")  
+                                div(class="form-group center row")
+                                    label(for="id" class="col-md-4")
+                                        编号
+                                        input(type="text" class="form-control" id="unewstitle" name="id")     
+                                    button(class="btn-danger btn-xs" type="submit col-md-2")
+                                        删除 
+            div(class="row")
+                p
+                    编辑
+                    form(role="form" method="get" action="updatenew")
+                            div(class="form-group")
+                                label(for="id")
+                                    编号
+                                input(type="text" class="form-control" id="unewstitle" name="id")
+                            div(class="form-group")
+                                label(for="newtitle")
+                                    新闻标题
+                                input(type="text" class="form-control" id="newstitle" name="newtitle" placeholder="请输入新闻标题")
+                            div(class="form-group")
+                                label(for="newoption")
+                                    新闻类型
+                                select(class="form-control" id="newstype" name="newoption")
+                                    option
+                                        精选
+                                    option
+                                        百家
+                                    option
+                                        本地
+                                    option
+                                        图片
+                                    option
+                                        娱乐
+                                    option
+                                        社会
+                                    option
+                                        军事
+                                    option
+                                        女人
+                                    option
+                                        搞笑
+                                    option
+                                        互联网
+                            div(class="form-group")
+                                label(for="newimg")
+                                    新闻图片
+                                input(type="text" class="form-control" id="newimg" name="newimg" placeholder="请输入图片路径")
+                            div(class="form-group")
+                                label(for="newcontent")
+                                    新闻
+                                input(type="text" class="form-control" id="newcontent" name="newcontent")
+                            div(class="form-group")
+                                label(for="newtime")
+                                    新闻时间
+                                input(type="date" class="form-control" id="newtime" name="newtime")
+                            button(type="submit" class="btn btn-primary" id="confirmupdate")
+                                确认
+        script(type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js")
+        script(type="text/javascript" src="./java/userq.js")
