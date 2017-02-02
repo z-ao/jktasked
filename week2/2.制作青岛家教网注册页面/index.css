@@ -1,0 +1,123 @@
+	    *{
+	    	margin: 0;
+	    	padding: 0;
+	    }
+
+        body{
+            margin: 0 ;
+            background-color: #58CCDB;
+        }
+
+	    .textform{
+	    	width: 800px;
+            background-color: #FFF;
+            margin: 10px auto;
+            font-size: 5px;
+	    }
+
+	    .textheader{
+            position: relative;
+	    }       
+        
+        .nav{
+        	float: right;
+        	position: absolute;
+        	top: 80px;
+        	right: 5px;
+        }
+
+        .nav li{
+       	    float: left;
+       	    margin-right: 10px;
+       	    list-style-type: none;
+        }
+
+        .nav a{
+        	color: #E097B8;        	
+       	    text-decoration: none;        	
+       	    padding:10px 0;
+        }
+
+
+	    .textarticle{
+            text-align: center;
+	    }
+
+        .textgraph{
+            font-size: 25px;
+            font-weight: bolder;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .tableform{
+            margin: 0 30px;
+            vertical-align: middle;            
+            width: 730px;
+            border-collapse: collapse;            
+        }
+
+
+
+        .firstf{
+        	text-align: center;
+        }
+
+
+         th{
+        	width: 730px;
+        	height: 10px;
+        	color: #0B20FD;
+        	padding-left: 15px;
+        	text-align: left;
+        	background-color: #808080;
+        }
+
+        .tableform span{
+        	font-weight: thin;
+        	color: #FD0B1E;
+        }
+
+
+
+        .formtext{
+            display:block;
+            height:10px;
+            text-align: left; 
+        }
+
+        .blue{
+        	color: #0B20FD;
+        	width: 600px;
+        	text-align: left;
+        }
+
+        .frigh{
+        	text-align: right;
+        	width: 130px;
+        }
+
+        .tarea{
+        	width: 420px;
+        	height: 110px;
+        }
+
+        .btnm{
+        	display: block;
+        	text-align: center;
+        }
+
+        .tableform input{
+        	color:#121111;
+        }
+
+        .formtext span{
+        	color:#121111;
+        }
+     
+
+
+        .foottop{
+        	display: block;
+          text-align: center;
+        }

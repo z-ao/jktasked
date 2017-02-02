@@ -1,0 +1,24 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        padding: 0; 
+        margin: 0;
+    }
+
+    .crouse{
+        margin: 0 auto
+    }
+
+    .crouse td{
+        width: 60px;
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+        font-weight: bold;
+    }
+

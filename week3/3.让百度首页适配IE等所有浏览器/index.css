@@ -1,0 +1,454 @@
+    body{
+        font: 12px arial;
+        margin: 0;
+        padding: 0;
+    }
+
+     *{
+        margin: 0;
+        padding: 0;
+    }
+    .header nav{
+        position: relative;
+        height: 40px;
+        width: 420px; 
+        float: right;
+        line-height: 40px;
+    }
+
+
+    .header .icon{
+        height: 40px ;
+        float: left;
+    }
+
+    .header .weather{    
+        width: 150px;
+        height: 40px;
+        border-right: 1px solid #fff;
+        line-height: 40px;
+        float: left;   
+        text-decoration: none;
+        margin: 0;
+    }
+
+    .showwea{
+        position: absolute;
+        top: 40px;
+        display: none;
+        width: 700px;
+        z-index: 9;
+    }
+
+    .showwea span{
+        display: block;
+        float: left;
+        height: 80px;
+        width: 100px;
+        background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/aladdin/img/new_weath/icon/5.png) 0 0 no-repeat / 100px 80px;
+    }
+
+    .weather i{
+        position: relative;
+        top: 10px;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+    }
+
+    .header .ricon{
+        width: 140px;
+        height: 40px;
+        float: left;
+        line-height: 40px;
+    }
+
+    .ricon a{
+        margin: 0 10px;
+    }
+
+    .header nav a{
+        display: inline-block;
+        margin-right: 10px;
+        color: #101010;
+    }
+    
+    .fonz{
+        font-weight:  bold;
+    }
+
+    .header nav a:hover{
+        color: #0000FF;
+    }
+
+    ul{
+        padding-left: 0;
+        margin: 0;
+    }
+ 
+    /*主体部份*/
+    .wrapper{
+        min-height: 800px;
+        min-width: 950px;
+    }
+
+    .content{
+        margin:  auto;
+        text-align: center;
+        padding: 130px 10px;
+        position: relative;
+        clear: both;
+    }
+
+    .content img{
+        width: 270px;
+        height: 110px;
+    }
+
+    .content .searchtext{
+        width: 530px;        
+        display: inline-block;
+        height: 35px;
+        border-color: #B0C3E2;
+        box-shadow: none;
+        line-height: 27px;
+        border-width: thin;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .content button{
+        position: relative;
+        width: 90px;
+        height: 35px;
+        right: 3px;
+        color: #FFF;
+        background-color: #3385FF;
+        border: none;
+    }
+
+    .content form{
+        position: relative;
+        height: 35px;
+        width: 650px;
+        margin: 0 auto;
+    }
+    
+    .setting{
+        width: 40px;
+        height: 15px;
+        position: absolute;
+        top: 0;
+        right: 80px;
+        display: block;
+    }
+ 
+    
+    .setting .searchshow{       
+        display: none;
+        width: 60px;
+        border: 1px solid #E8E9E8;   
+        right: 20px;
+        position: relative;
+        margin-top: 2px;
+        text-align: center;
+        z-index: 9;
+    }
+
+    .searchshow ul{
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        background-color: #fff;
+    }
+
+
+     .searchshow  ul a:hover {
+        width: 100%;
+        display:inline-block;
+        text-decoration: none;
+        background-color:#3385FF;  
+        color: #fff;        
+    }
+
+
+    
+
+    .searchshow a{
+        width: 100%;
+        text-decoration: none; 
+        margin-right: 0;
+    }
+
+
+
+    .trag{
+        position: absolute;
+        display: block;
+        border: 5px solid transparent;
+        border-style: dashed dashed solid dashed;
+        border-bottom-color: #E8E8E8;
+        right: 25px;
+        top: -12px;
+    }
+
+    .trag:after{
+        content: no-open-quote;
+        position: absolute;
+        display: block;
+        border: 5px solid transparent;
+        border-style: dashed dashed solid dashed;
+        border-bottom-color: #FFF;
+        right: -5px;
+        top: -3px;        
+    }
+
+    .setting:hover .searchshow{
+        display: inline-block;
+        color: #FFF;
+    }
+
+    .more{
+        position: relative;
+        right: -26px;
+        width: 49px;     
+        height: 21px;
+        background-color: #3385FF;
+        text-align: center;
+        line-height:21px;
+        margin: 0;
+    }
+
+
+
+
+    .pie:hover{
+        background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_679c15cc.png) 0 -17px no-repeat ;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .pie{       
+        position: absolute;         
+        right: 110px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_679c15cc.png) 0 3px no-repeat ;
+    }
+    
+
+    .fright{
+        width: 80px;
+        height: 20px;
+        position: relative;
+        margin: 0;
+        top: -30px;
+        right: -330px;
+        z-index: 9;
+    }
+
+
+    .fright li{
+        list-style: none;
+        border-bottom:  1px solid #EFEAEA;
+        width: 70px;
+        margin: 0 auto;
+    }
+
+    .fright .more a{
+        width: 49px;
+        height: 100%;
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+    .show{
+        display: none;
+        position: absolute;
+        width: 80px;
+        right: -10px;
+        top: -30px;
+        height: 930px;
+        text-align: center;
+        padding: 20px 0 10px;
+        border: 1px solid #fafafa;
+        background-color: #f9f9f9;
+    }
+
+    .show ul{
+        width: 70px;
+    }
+
+    nav .show a{
+        margin: 0 -20px;
+        height: 40px;
+        width: 90px;
+        text-align: center;
+    }
+
+    .fright:hover .show{
+        display: inline-block;       
+        color: #0B0B0B;
+    }
+
+    .fright:hover .more{
+        display: none;       
+    }
+
+    .searchs{
+        position: fixed;
+        display: none;
+        height: 120px;
+        width: 100%;
+        z-index: 20;
+    }
+
+    .searchs span{
+        width: 490px;
+        display: block;        
+        margin: 10px auto;
+    }
+
+    .searchs .txts{
+        width: 420px;
+        height: 40px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        font-family: arial;
+        border: none;
+    }
+
+    .searchs button{
+        height: 40px;
+        width: 60px;
+        border: none;
+        background: #3385FF;
+        cursor: pointer;
+    }
+
+    .news{
+        position: relative;
+        width: 560px;
+        margin: 40px auto ;
+        opacity: .9;
+        text-align: left;
+        border: 1px solid #eee;
+    }
+
+    .news ul{
+        height: 40px;
+        border: 1px solid #eee; 
+    }
+
+    .news li{
+        float: left;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #eee;
+        list-style: none;
+        padding: 0 5px;
+    }
+
+    .news a{
+        text-decoration: none;
+        height: 40px;
+        width: 100%;
+        color: #333;
+    }
+
+    .news span{
+        display: inline-block;
+        width: 140px;
+        box-sizing: border-box;
+        position: absolute;
+        left: 20px;
+        margin: 10px ;
+    }
+
+    .news table{
+        width: 100%;
+        padding-left: 140px;
+        text-align: center;
+        border: 1px solid #eee;
+    }
+
+    .news div{
+        display: none;
+    }
+
+    .wrapper .on{
+        display: block;
+    }
+
+
+    
+    .news td{
+        height: 40px;
+        width: 130px;
+    }
+
+    .show a:hover{
+        width: 100%;
+        text-decoration: underline;
+    }
+
+    .show i{
+        display: block;
+        width: 36px;
+        height: 36px;
+        margin: 10px auto 5px;
+        border: none;
+    }
+
+    .colthos{
+        height: 140px;
+        display: none;
+        background: #fff;
+        z-index: 99;
+    }
+
+    .colthos img{
+        height: 140px;
+        width: 130px;
+    }
+
+    .blue{
+        background: #00ffff;
+        color: #fff;
+    }
+
+
+
+
+
+    /*底部部分*/
+    footer{
+        width: 350px; 
+        height: 60px;
+        margin: 150px auto 0; 
+        color: #E8E8E8;
+    }
+
+    footer p{
+        float: left;
+        margin: 0;
+    }
+     
+    footer a{
+        color: #E8E8E8;
+    }
+
+    .font a{
+         margin-right: 48px;
+    }
+
+    .foot-icon{
+        display: inline-block;
+        width: 14px;
+        height: 17px;
+        background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5859e57.png) -623px -96px no-repeat;
+    }
