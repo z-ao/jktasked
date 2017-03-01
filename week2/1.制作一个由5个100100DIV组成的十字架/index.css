@@ -4,7 +4,7 @@
             margin: 0;
         }
 
-        .bigbox{
+        .con{
         	width: 300px;
         	height: 300px;
         	position: absolute;
@@ -14,55 +14,47 @@
         	margin-top: -150px;
         }
 
-        .bigbox div{
+        .con div{
         	width: 100px;
         	height: 100px;
+            float: left;
         }
 
-        .content{
-       	    margin: 100px;
-        	position: absolute;
-        	border: 1px solid #ff0000;
-        	box-shadow: 5px 5px black;
-            text-align: center;
-            line-height: 100px;
-        }
-
-        .topbox{
-            position: relative;
-            left: 100px;
-        	background-color: #ff000f;
-        	box-shadow: 5px 5px 5px #ff0000;
-        }
-
-        .rightbox{
-            position: absolute;
-            left: 200px;
-        	background-color: #00ffff;
-        	box-shadow:inset 5px 5px #ff0000;
-        }
-
-        .bottombox{
-            position: absolute;
-            right: 100px;
-            bottom: 0;
-        	background-color: #0000ff;
-        	box-shadow: 5px 5px 5px 5px #ff0000;
-        }
-
-        .leftbox{
-            position: absolute;
-            bottom: 100px;
-         	background-color: #ffff00;
-        	box-shadow: 5px 5px  #ff0000;
-       }
-
-
-/*flex
         .content{
             display: flex;
+            position: relative;
+            left: 100px;
+            top: 100px;
+            align-items: center;
             justify-content: center;
-            align-content: center;
-        }*/
+        	box-shadow: 5px 5px #524a4a;
+        }
 
+        .top{
+            position: relative;
+        	background-color: #ff000f;
+        	box-shadow: 5px 5px 5px #524a4a;
+        }
 
+        .right{
+            position: relative;
+            top: 100px;
+        	background-color: #00ffff;
+        	box-shadow: 5px 5px 5px #524a4a;
+        }
+
+        .bottom{
+            position: relative;
+            top: 100px;
+            left: 100px;
+            bottom: 0;
+        	background-color: #0000ff;
+        	box-shadow: 5px 5px 5px  #524a4a;
+        }
+
+        .left{
+            position: relative;
+            right: 100px;
+         	background-color: #ffff00;
+        	box-shadow: 5px 5px 5px #524a4a;
+       }
